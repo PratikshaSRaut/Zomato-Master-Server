@@ -79,7 +79,7 @@ Router.get(
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
     return res.redirect(
-      `https://goofy-kowalevski-9d1d3d.netlify.app/google/${req.session.passport.user.token}`
+      `https://zomato-master-client.netlify.app/google/${req.session.passport.user.token}`
     );
   }
 );
