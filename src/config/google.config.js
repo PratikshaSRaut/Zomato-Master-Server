@@ -9,7 +9,7 @@ export default (passport) => {
       {
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: "http://localhost:4000/auth/google/callback",
+        callbackURL: "https://zomato-master-server-14.herokuapp.com/auth/google/callback",
       },
       async (accessToken, refreshToken, profile, done) => {
         // create a new user object
