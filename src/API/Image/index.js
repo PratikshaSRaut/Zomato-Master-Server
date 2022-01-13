@@ -24,7 +24,6 @@ import { s3Upload } from "../../utils/s3";
 Router.post("/", upload.single("file"), async (req, res) => {
   try {
     const file = req.file;
-    console.log(file);
     //s3 bucket options
     const bucketOptions = {
       Bucket: "zomato-master-p",
